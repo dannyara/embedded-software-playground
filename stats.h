@@ -21,7 +21,7 @@
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
+/* main entry point for stats.c file*/ 
 
 int main();
 
@@ -37,6 +37,69 @@ int main();
  * @return void
  */
 void print_statistics(char[] arr);
+
+/**
+ * @brief prints array
+ * 
+ * void function that takes in unisgned char integers and length and prints out the array to the screen
+ * 
+ * @param  arr: array to print, len: length of input arrray
+ * @return void
+ * 
+*/
+void print_array(char[] arr, int len);
+
+
+/**
+ * @brief finds median of array
+ * 
+ * Function that takes in an array and length and finds the median 
+ * @param  arr: 8bit array to print, len: length of input arrray
+ * @return median 8 bit word
+ * 
+*/
+int find_median(char[] arr, int len);
+
+/**
+ * @brief finds mean of array
+ * 
+ * Function that takes in an array and length and finds the mean 
+ * @param  arr: 8 bit array to calculate mean, len: length of input arrray
+ * @return mean 8 bit word
+ * 
+*/
+int find_mean(char[] arr, int len);
+
+/**
+ * @brief finds max value of array
+ * 
+ * Function that takes in an array and length and finds the maximum value 
+ * @param  arr: 8 bit array , len: length of input arrray
+ * @return max 8 bit int
+ * 
+*/
+int find_max(char[] arr, int len);
+
+/**
+ * @brief finds min value of array
+ * 
+ * Function that takes in an array and length and finds the minimum value 
+ * @param  arr: 8 bit array , len: length of input arrray
+ * @return max 8 bit int
+ * 
+*/
+int find_min(char[] arr, int len);
+
+/**
+ * @brief sorts array fromlargest to smallest
+ * 
+ * Function that takes in an array and length and sorts it, returning the sorted array
+ * @param  arr: 8 bit array , len: length of input arrray
+ * @return 8bit array of sorted chars
+ * 
+*/
+char sort_array(char[] arr, int len);
+
 
 
 #endif /* __STATS_H__ */
