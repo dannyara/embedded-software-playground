@@ -37,21 +37,23 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-  void print_statistics(char[] arr, char len){
 
-  }
-  void print_array(char[] arr, char len){
+
+ 
+  void print_array(char arr[], int len){
     char i;
     for(i = 0; i < len; i++){
-      printf("%d", arr[i])
+      printf("%d ", (unsigned char)arr[i]);
     }
-    // printf("\n")
+    printf("\n");
     return;
   }
 
+  print_array(test, SIZE);
+
 }
 
-void print_statistics(char[] arr) {
+void print_statistics(char arr[] ) {
   unsigned char min = 0;
   unsigned char max = 255;
   unsigned char mean = 0;

@@ -23,7 +23,7 @@
 
 /* main entry point for stats.c file*/ 
 
-int main();
+void main();
 
 
 /**
@@ -36,7 +36,7 @@ int main();
  *
  * @return void
  */
-void print_statistics(char[] arr);
+void print_statistics(char arr[]);
 
 /**
  * @brief prints array
@@ -47,7 +47,7 @@ void print_statistics(char[] arr);
  * @return void
  * 
 */
-void print_array(char[] arr, int len);
+void print_array(char arr[], int len);
 
 
 /**
@@ -58,7 +58,7 @@ void print_array(char[] arr, int len);
  * @return median 8 bit word
  * 
 */
-int find_median(char[] arr, int len);
+int find_median(char arr[], int len);
 
 /**
  * @brief finds mean of array
@@ -68,7 +68,7 @@ int find_median(char[] arr, int len);
  * @return mean 8 bit word
  * 
 */
-int find_mean(char[] arr, int len);
+int find_mean(char arr[], int len);
 
 /**
  * @brief finds max value of array
@@ -78,7 +78,7 @@ int find_mean(char[] arr, int len);
  * @return max 8 bit int
  * 
 */
-int find_max(char[] arr, int len);
+int find_max(char arr[], int len);
 
 /**
  * @brief finds min value of array
@@ -88,7 +88,7 @@ int find_max(char[] arr, int len);
  * @return max 8 bit int
  * 
 */
-int find_min(char[] arr, int len);
+int find_min(char arr[], int len);
 
 /**
  * @brief sorts array fromlargest to smallest
@@ -98,7 +98,7 @@ int find_min(char[] arr, int len);
  * @return 8bit array of sorted chars
  * 
 */
-char sort_array(char[] arr, int len);
+char sort_array(char arr[], int len);
 
 
 
