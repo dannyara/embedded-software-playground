@@ -78,7 +78,7 @@ int find_mean(char arr[], int len);
  * @return max 8 bit int
  * 
 */
-int find_max(char arr[], int len);
+int find_maximum(char arr[], int len);
 
 /**
  * @brief finds min value of array
@@ -88,7 +88,7 @@ int find_max(char arr[], int len);
  * @return max 8 bit int
  * 
 */
-int find_min(char arr[], int len);
+int find_minimum(char arr[], int len);
 
 /**
  * @brief sorts array fromlargest to smallest

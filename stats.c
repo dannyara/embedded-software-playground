@@ -23,6 +23,7 @@
 
 #include <stdio.h>
 #include "stats.h"
+#include <string.h>
 
 /* Size of the Data Set */
 #define SIZE (40)
@@ -36,10 +37,10 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
+  unsigned char sorted[SIZE];
+
+
   /* Statistics and Printing Functions Go Here */
-
-
- 
   void print_array(char arr[], int len){
     char i;
     for(i = 0; i < len; i++){
@@ -49,18 +50,66 @@ void main() {
     return;
   }
 
-  print_array(test, SIZE);
-
-}
-
-void print_statistics(char arr[] ) {
-  unsigned char min = 0;
-  unsigned char max = 255;
-  unsigned char mean = 0;
-  unsigned char med = 0;
-  printf("min: %d, max: %d, mean: %d, median: %d", min, max, mean, med);
+  void print_statistics(char arr[] ) {
+  unsigned char min = find_minimum(sorted, SIZE);
+  unsigned char max = find_maximum(sorted, SIZE);
+  unsigned char mean = find_mean(sorted, SIZE);
+  unsigned char med = find_median(sorted, SIZE);
+  printf("ARRAY STATISTICS: min: %d, max: %d, mean: %d, median: %d \n", min, max, mean, med);
   return;
 }
 
+void sort_array(char arr[], int len){
+  int i, j, tmp;
+  //make a copy of the array and store it in sorted
+  strcpy(sorted, arr);
+  //bubble sort
+  for(i = 0; i< len; i++){
+    for(j = i; j< len; j++){
+      if(sorted[i] < sorted[j]){
+        tmp = sorted[i];
+        sorted[i] = sorted[j];
+        sorted[j] = tmp;
+      }
+    }
+  }
+}
+
+  sort_array(test, SIZE);
+  printf("SORTED ARRAY:\n");
+  print_array(sorted, SIZE);
+  print_statistics(test);
+
+}
+
+
 /* Add other Implementation File Code Here */
 
+int find_maximum(char arr[], int len){
+  return arr[0];
+}
+
+int find_minimum(char arr[], int len){
+  return arr[len-1];
+}
+
+int find_mean(char arr[], int len){
+  int i;
+  int sum = 0;
+  for(i = 0; i < len; i++){
+    // increment sum, while casting as an unsigned char so it can work with ints
+    sum = sum + (unsigned char)arr[i];
+  }
+  return sum / len;
+}
+
+int find_median(char arr[], int len){
+  if(len/2){
+    //no remainder, take numbers are len/2 and len/2+1 and get avg
+    return (arr[len/2] + arr[(len/2)+1])/2;
+  }
+  else{
+    //odd set, the median will be the middle index in a sorted array
+    return arr[len/2];
+  }
+}
