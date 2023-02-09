@@ -23,18 +23,20 @@
 
 /* Add Your Declarations and Function Comments here */ 
 
+int main();
+
+
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief function that prints statistics from an array:
+ *  min, max, mean, and median
  *
- * <Add Extended Description Here>
+ * void function takes in an array of unsigned integers, prints the statistics, and then returns 
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
+ * @param arr => the int array to run statistics on
  *
- * @return <Add Return Informaiton here>
+ * @return void
  */
+void print_statistics(char[] arr);
 
 
 #endif /* __STATS_H__ */

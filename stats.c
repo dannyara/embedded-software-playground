@@ -9,13 +9,13 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c
+ * @brief function defintions of stats
  *
- * <Add Extended Description Here>
+ * This is for coursera week 1
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Danny A
+ * @date 01/25/2023
  *
  */
 
@@ -37,7 +37,28 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
+  void print_statistics(char[] arr, char len){
+
+  }
+  void print_array(char[] arr, char len){
+    char i;
+    for(i = 0; i < len; i++){
+      printf("%d", arr[i])
+    }
+    // printf("\n")
+    return;
+  }
 
 }
 
+void print_statistics(char[] arr) {
+  unsigned char min = 0;
+  unsigned char max = 255;
+  unsigned char mean = 0;
+  unsigned char med = 0;
+  printf("min: %d, max: %d, mean: %d, median: %d", min, max, mean, med);
+  return;
+}
+
 /* Add other Implementation File Code Here */
+
