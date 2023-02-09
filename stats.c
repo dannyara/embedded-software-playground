@@ -85,15 +85,15 @@ void sort_array(char arr[], int len){
 
 /* Add other Implementation File Code Here */
 
-int find_maximum(char arr[], int len){
+unsigned char find_maximum(char arr[], int len){
   return arr[0];
 }
 
-int find_minimum(char arr[], int len){
+unsigned char find_minimum(char arr[], int len){
   return arr[len-1];
 }
 
-int find_mean(char arr[], int len){
+unsigned char find_mean(char arr[], int len){
   int i;
   int sum = 0;
   for(i = 0; i < len; i++){
@@ -103,7 +103,7 @@ int find_mean(char arr[], int len){
   return sum / len;
 }
 
-int find_median(char arr[], int len){
+unsigned char find_median(char arr[], int len){
   if(len/2){
     //no remainder, take numbers are len/2 and len/2+1 and get avg
     return (arr[len/2] + arr[(len/2)+1])/2;

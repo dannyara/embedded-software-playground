@@ -55,50 +55,50 @@ void print_array(char arr[], int len);
  * 
  * Function that takes in an array and length and finds the median 
  * @param  arr: 8bit array to print, len: length of input arrray
- * @return median 8 bit word
+ * @return median 8 bit value
  * 
 */
-int find_median(char arr[], int len);
+unsigned char find_median(char arr[], int len);
 
 /**
  * @brief finds mean of array
  * 
  * Function that takes in an array and length and finds the mean 
- * @param  arr: 8 bit array to calculate mean, len: length of input arrray
- * @return mean 8 bit word
+ * @param  arr: 8 bit array to calculate mean, len: int length of input array
+ * @return mean 8 bit value
  * 
 */
-int find_mean(char arr[], int len);
+unsigned char find_mean(char arr[], int len);
 
 /**
  * @brief finds max value of array
  * 
  * Function that takes in an array and length and finds the maximum value 
- * @param  arr: 8 bit array , len: length of input arrray
+ * @param  arr: 8 bit array , len: int length of input array
  * @return max 8 bit int
  * 
 */
-int find_maximum(char arr[], int len);
+unsigned char find_maximum(char arr[], int len);
 
 /**
  * @brief finds min value of array
  * 
  * Function that takes in an array and length and finds the minimum value 
- * @param  arr: 8 bit array , len: length of input arrray
+ * @param  arr: 8 bit array , len: int length of input array
  * @return max 8 bit int
  * 
 */
-int find_minimum(char arr[], int len);
+unsigned char find_minimum(char arr[], int len);
 
 /**
- * @brief sorts array fromlargest to smallest
+ * @brief sorts array from largest to smallest
  * 
  * Function that takes in an array and length and sorts it, returning the sorted array
- * @param  arr: 8 bit array , len: length of input arrray
- * @return 8bit array of sorted chars
+ * @param  arr: 8 bit array , len: int length of input array
+ * @return void
  * 
 */
-char sort_array(char arr[], int len);
+void sort_array(char arr[], int len);
 
 
 
